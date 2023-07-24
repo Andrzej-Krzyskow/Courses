@@ -18,26 +18,26 @@ public class FunRestController {
 
     // expose new endpoint for "teaminfo"
     @GetMapping("/teaminfo")
-    public String getTeamInfo(){
-        return String.format("Coach: %s, Team name: %s",coachName,teamName);
+    public String getTeamInfo() {
+        return "Coach: " + coachName + ", Team name: " + teamName;
     }
 
     // expose "/" that returns "Hello World!"
     @GetMapping("/")
-    public String sayHello(){
+    public String sayHello() {
         return "Hello, World!";
     }
 
     // expose new endpoint for 'workout'
     @GetMapping("/workout")
-    public String getDailyWorkout(){
+    public String getDailyWorkout() {
         return "Run a hard 10k!";
     }
 
 
     // expose new endpoint for 'fortune'
     @GetMapping("/fortune")
-    public String getDailyFortune(){
+    public String getDailyFortune() {
         return "I got 10K";
     }
 
